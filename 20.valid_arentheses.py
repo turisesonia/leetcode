@@ -29,11 +29,7 @@ def valid_parentheses(s: str):
             tmp.append(char)
 
         else:
-            try:
-                if correct[char] != tmp.pop():
-                    return False
-
-            except IndexError as e:
+            if len(tmp) == 0 or correct[char] != tmp.pop():
                 return False
 
     return len(tmp) == 0
