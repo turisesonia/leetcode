@@ -22,6 +22,9 @@ def valid_parentheses(s: str):
     open_chars = ["(", "[", "{"]
     correct = {")": "(", "]": "[", "}": "{"}
 
+    # 使用 list 堆疊
+    # 將開始括號符存入 list, 如果遇到關閉符號
+    # 從堆疊中取出最後一個欄位來比對是否為合法的括號開關
     tmp = []
 
     for char in s:
