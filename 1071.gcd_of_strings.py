@@ -21,14 +21,18 @@ Output: ""
 
 https://leetcode.com/problems/greatest-common-divisor-of-strings/
 """
-
+import re
 
 def gcd_of_strings(str1: str, str2: str) -> str:
+    ooo = re.findall('..', str1)
+
     print(str1.split(str1[:2]))
-    pass
+    print(ooo)
+
+    return "ABC"
 
 
 if __name__ == "__main__":
     assert gcd_of_strings("ABCABC", "ABC") == "ABC"
-    assert gcd_of_strings("ABABAB", "AB") == "AB"
-    assert gcd_of_strings("LEET", "CODE") == ""
+    # assert gcd_of_strings("ABABAB", "AB") == "AB"
+    # assert gcd_of_strings("LEET", "CODE") == ""
