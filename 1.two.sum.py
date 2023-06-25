@@ -29,6 +29,18 @@ def two_sum(nums: list, target: int):
         elements[nums[i]] = i
 
 
+def two_sum(nums: list, target: int):
+    tmp = {}
+
+    for idx, num in enumerate(nums):
+        ans = target - num
+
+        if ans in tmp:
+            return [tmp[ans], idx]
+
+        tmp[num] = idx
+
+
 if __name__ == "__main__":
     assert two_sum(nums=[2, 7, 11, 15], target=9) == [0, 1]
     assert two_sum(nums=[1, 6, 3, 4, 8], target=14) == [1, 4]
