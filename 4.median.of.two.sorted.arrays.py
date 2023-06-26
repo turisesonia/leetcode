@@ -31,7 +31,7 @@ from typing import List
 
 def find_median_sorted_arrays(nums1: List[int], nums2: List[int]) -> float:
     """
-    用了 python 提供的 sorted 來解, 待研究不使用 sorted 的解法
+    TODO 用了 python 提供的 sorted 來解, 待研究不使用 sorted 的解法
     """
     merged = sorted(nums1 + nums2)
     length = len(merged)
