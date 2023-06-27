@@ -28,18 +28,22 @@ Constraints:
 
 
 def reverse(x: int) -> int:
+    # 判斷原值 x 是否為負數
     negative = -1 if x < 0 else 1
     x = str(abs(x))
-
     ls = []
+
+    # 將 x 轉為字串後, 由右往左依序存進 list 內, 如果遇到第一個為 0 則跳過
     for i in range(len(x) - 1, -1, -1):
         if len(ls) == 0 and x[i] == 0:
             continue
 
         ls.append(x[i])
 
+    # 將結果轉為 int
     res = int("".join(ls)) * negative
 
+    # 題目限制
     if res not in range(-(2**31), 2**31):
         return 0
 
