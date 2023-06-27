@@ -3,6 +3,8 @@
 Easy
 Binary Tree Inorder Traversal
 
+https://leetcode.com/problems/binary-tree-inorder-traversal/
+
 Given the root of a binary tree, return the inorder traversal of its nodes' values.
 
 Example 1:
@@ -17,12 +19,11 @@ Example 3:
 Input: root = [1]
 Output: [1]
 
-https://leetcode.com/problems/binary-tree-inorder-traversal/
-
 Follow up: Recursive solution is trivial, could you do it iteratively?
 """
 from typing import Optional, List
 from data_structure.binary_tree import Node
+
 
 # 遞迴解法
 def inorder_traversal_recursive(root: Optional[Node]) -> List[int]:
@@ -45,6 +46,7 @@ def _traversal(current: Node, ls: list):
 
     if current.right:
         _traversal(current.right, ls)
+
 
 # 迭代解法
 def inorder_traversal_iter(root: Optional[Node]) -> List[int]:
@@ -74,6 +76,7 @@ def inorder_traversal_iter(root: Optional[Node]) -> List[int]:
         current = current.right
 
     return result
+
 
 if __name__ == "__main__":
     pass

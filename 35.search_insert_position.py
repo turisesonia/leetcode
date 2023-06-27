@@ -2,6 +2,8 @@
 # 35
 Easy
 
+https://leetcode.com/problems/search-insert-position/
+
 Search insert position
 
 Given a sorted array of distinct integers and a target value,

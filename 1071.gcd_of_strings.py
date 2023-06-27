@@ -2,6 +2,8 @@
 # 1071
 Easy
 
+https://leetcode.com/problems/greatest-common-divisor-of-strings/
+
 Greatest Common Divisor of Strings
 For two strings s and t, we say "t divides s" if and only if s = t + ... + t (i.e., t is concatenated with itself one or more times).
 
@@ -18,13 +20,12 @@ Output: "AB"
 Example 3:
 Input: str1 = "LEET", str2 = "CODE"
 Output: ""
-
-https://leetcode.com/problems/greatest-common-divisor-of-strings/
 """
 import re
 
+
 def gcd_of_strings(str1: str, str2: str) -> str:
-    ooo = re.findall('..', str1)
+    ooo = re.findall("..", str1)
 
     print(str1.split(str1[:2]))
     print(ooo)
