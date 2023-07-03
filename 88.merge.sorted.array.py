@@ -48,24 +48,67 @@ def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
     Do not return anything, modify nums1 in-place instead.
     """
 
-    tmp = []
-    n1i = 0
-    n2i = 0
-    for i in range(m + n):
-        n1 = nums1[n1i]
-        n2 = nums2[n2i]
+    n1i = m - 1
+    n2i = n - 1
+    w = m + n - 1
 
-        if n2 <= n1:
-            nums1[i] = n2
-            tmp.append(n1)
-            n2i += 1
-        elif n2 < n1:
-            pass
+    while n2i >= 0:
+        if n1i >= 0 and nums1[n1i] > nums2[n2i]:
+            nums1[w] = nums1[n1i]
+            n1i -= 1
+        else:
+            nums1[w] = nums2[n2i]
+            n2i -= 1
+
+        w -= 1
 
 
 if __name__ == "__main__":
+    # * Case 1
     nums1 = [1, 2, 3, 0, 0, 0]
     merge(nums1, 3, [2, 5, 6], 3)
 
     print(nums1)
     assert nums1 == [1, 2, 2, 3, 5, 6]
+
+    # * Case 2
+    nums1 = [1]
+    merge(nums1, 1, [], 0)
+
+    print(nums1)
+    assert nums1 == [1]
+
+    # * Case 3
+    nums1 = [0]
+    merge(nums1, 0, [1], 1)
+
+    print(nums1)
+    assert nums1 == [1]
+
+    # * Case 4
+    nums1 = [2, 0]
+    merge(nums1, 1, [1], 1)
+
+    print(nums1)
+    assert nums1 == [1, 2]
+
+    # * Case 5
+    nums1 = [0, 0, 0, 0, 0]
+    merge(nums1, 0, [1, 2, 3, 4, 5], 5)
+
+    print(nums1)
+    assert nums1 == [1, 2, 3, 4, 5]
+
+    # * Case 6
+    nums1 = [4, 5, 6, 0, 0, 0]
+    merge(nums1, 3, [1, 2, 3], 3)
+
+    print(nums1)
+    assert nums1 == [1, 2, 3, 4, 5, 6]
+
+    # * Case 7
+    nums1 = [4, 0, 0, 0, 0, 0]
+    merge(nums1, 1, [1, 2, 3, 5, 6], 5)
+
+    print(nums1)
+    assert nums1 == [1, 2, 3, 4, 5, 6]
