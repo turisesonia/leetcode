@@ -1,8 +1,8 @@
-class Node(object):
-    def __init__(self, value=None, left=None, right=None):
+class Node:
+    def __init__(self, value: int, left=None, right=None):
         """
         Args:
-            value (optional): Node value. Defaults to None.
+            value (int): Node value.
             left (Node, optional): Left node. Defaults to None.
             right (Node, optional): Right node. Defaults to None.
         """
@@ -11,38 +11,42 @@ class Node(object):
         self.right = right
 
 
-class BTree(object):
+class BinarySearchTree:
     def __init__(self):
         self.root = None
 
     def insert(self, value):
         if not self.root:
             self.root = Node(value)
-
         else:
             self._insert(value, self.root)
 
-    def _insert(self, value, current: Node):
-        """比較 current.value 與傳進來的 value 大小,
+    def _insert(self, value: int, current: Node):
+        """
+        比較 value 和 current.value 的大小,
         value 較小加到左節點
         value 較大加到右節點
-        如果(左/右)節點已存在則遞迴往下判斷
+        如果 ( 左 / 右 ) 節點均已存在, 則遞迴往下判斷
 
         Args:
-            value (): value
+            value (int): value
             current (Node): Current node
         """
+
+        node = Node(value)
+
         if current.value > value:
-            if current.left is None:
-                current.left = Node(value)
+            if not current.left:
+                current.left = node
             else:
                 self._insert(value, current.left)
 
         elif current.value < value:
-            if current.right is None:
-                current.right = Node(value)
+            if not current.right:
+                current.right = node
             else:
                 self._insert(value, current.right)
+
         else:
             # value is exists
             print(f"value: {value} exists")
@@ -51,13 +55,13 @@ class BTree(object):
         return f"{self.root.value}"
 
     def print_tree(self):
-        self._print_node(self.root)
+        self._print_tree(self.root)
 
-    def _print_node(self, current: Node):
+    def _print_tree(self, current: Node):
         if current:
             print(current.value)
-            self._print_node(current.left)
-            self._print_node(current.right)
+            self._print_tree(current.left)
+            self._print_tree(current.right)
 
     def in_order_traversal(self):
         """中序遍歷
@@ -76,12 +80,3 @@ class BTree(object):
         left -> right -> root
         """
         pass
-
-
-def demo():
-    tree = BTree()
-
-    for num in [10, 3, 15, 17, 7, 14, 5]:
-        tree.insert(num)
-
-    tree.print_tree()
