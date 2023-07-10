@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class Node:
     def __init__(self, value: int, left=None, right=None):
         """
@@ -9,6 +12,9 @@ class Node:
         self.value = value
         self.left = left
         self.right = right
+
+    def __repr__(self):
+        return str(self.value)
 
 
 class BinarySearchTree:
@@ -54,15 +60,6 @@ class BinarySearchTree:
     def __repr__(self):
         return f"{self.root.value}"
 
-    def print_tree(self):
-        self._print_tree(self.root)
-
-    def _print_tree(self, current: Node):
-        if current:
-            print(current.value)
-            self._print_tree(current.left)
-            self._print_tree(current.right)
-
     def in_order_traversal(self):
         """中序遍歷
         left -> root -> right
@@ -80,3 +77,17 @@ class BinarySearchTree:
         left -> right -> root
         """
         pass
+
+    def bfs_traversal(self):
+        dq = deque([self.root])
+
+        while len(dq) > 0:
+            node = dq.popleft()
+
+            if node.left:
+                dq.append(node.left)
+
+            if node.right:
+                dq.append(node.right)
+
+            print(node.value)

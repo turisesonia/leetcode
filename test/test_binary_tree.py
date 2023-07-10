@@ -7,4 +7,4 @@ def test_binary_search_tree():
     for num in [10, 3, 15, 17, 7, 14, 5]:
         tree.insert(num)
 
-    tree.print_tree()
+    tree.bfs_traversal()
