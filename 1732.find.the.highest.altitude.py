@@ -25,6 +25,9 @@ Constraints:
 n == gain.length
 1 <= n <= 100
 -100 <= gain[i] <= 100
+
+Time complexity:
+O(n)
 """
 
 from typing import List
