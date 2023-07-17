@@ -15,7 +15,20 @@ class ListNode:
 
 
 def list_to_linked(ls: list):
+    if len(ls) <= 0:
+        return None
+
     if len(ls) == 1:
         return ListNode(ls[0])
 
     return ListNode(ls[0], list_to_linked(ls[1:]))
+
+
+def linked_to_list(link: ListNode):
+    l = [link.val]
+    next_ = link.next
+    while next_ is not None:
+        l.append(next_.val)
+        next_ = next_.next
+
+    return l
