@@ -31,6 +31,12 @@ from data_structure.linked_list import ListNode, list_to_linked, linked_to_list
 
 
 def reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:
+    """
+    把 Linked node 每個元素都跑一遍並存至 list 內
+    用堆疊的方式再將 list 內元素取出來並產生反轉後的 linked list
+
+    O(2n)
+    """
     stack = [head.val]
 
     ln = head.next
@@ -49,9 +55,15 @@ def reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 def reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:
-    prev = None
+    """
+    prev    上一次所在的 node
+    current 現在所在的 node
 
-    current = head
+    每次執行時, 將現在所在的 node 的 val 產生出新的一個 ListNode, 並把 next 指到 prev
+    完成後 current 往前一個位置直到沒有下一個 (current = current.next)
+    """
+    prev, current = None, head
+
     while current is not None:
         val = current.val
 
@@ -66,15 +78,32 @@ def reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 def reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:
-    cur = head
-    pre = None
+    """
+    prev    上一次所在的 node
+    current 現在所在的 node
 
-    while cur:
-        temp = cur.next
-        cur.next = pre
-        pre = cur
-        cur = temp
-    return pre
+    處理流程:
+    先將 current.next 的 node 暫存到 temp 變數
+    temp = current.next ("2" ->3->4->5)
+
+    接下來把 current.next 指向 prev (如果是第一次即指向 None)
+    current.next = prev  ("1" -> None)
+
+    完成後, 將現在的 current 放到 prev (prev = current)
+    prev = current
+
+    current 繼續向前移動 (current = temp)
+    current = temp
+    """
+    current = head
+    prev = None
+
+    while current:
+        temp = current.next
+        current.next = prev
+        prev = current
+        current = temp
+    return prev
 
 
 if __name__ == "__main__":
