@@ -92,9 +92,13 @@ def product_except_self(nums: List[int]) -> List[int]:
     ans = [1 for _ in range(ln)]
 
     for i in range(ln):
+        # 將解答乘上左邊乘積
         ans[i] *= prev
+
+        # 因為已算完左邊乘積, 接下來要往下一個元素走, 所以將自己乘上 prev
         prev *= nums[i]
 
+        # 與上變兩個步驟相同, 只是這裡是由尾把到頭
         ans[ln - i - 1] *= post
         post *= nums[ln - i - 1]
 
