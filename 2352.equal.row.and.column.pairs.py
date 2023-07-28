@@ -33,31 +33,18 @@ from typing import List
 
 
 def equal_pairs(grid: List[List[int]]) -> int:
-    print([list(r) for r in zip(*grid)])
     gl = len(grid)
 
-    row_tmp = {}
-    col_tmp = {}
+    ans = 0
 
-    ans = set()
+    cols = [[grid[j][i] for j in range(gl)] for i in range(gl)]
 
-    for i in range(gl):
-        row = tuple(grid[i])
-        col = tuple(grid[j][i] for j in range(gl))
+    for row in grid:
+        for col in cols:
+            if row == col:
+                ans += 1
 
-        row_tmp[row] = i
-        col_tmp[col] = i
-
-        j = col_tmp.get(row, -1)
-        k = row_tmp.get(col, -1)
-
-        if j >= 0:
-            ans.add((i, j))
-
-        if k >= 0:
-            ans.add((k, i))
-
-    return len(ans)
+    return ans
 
 
 if __name__ == "__main__":
