@@ -3,6 +3,8 @@
 Medium
 Asteroid Collision
 
+https://leetcode.com/problems/asteroid-collision
+
 We are given an array asteroids of integers representing asteroids in a row.
 給定一個 array, 裡面包含一串數字代表小行星在同一列上
 
