@@ -25,6 +25,9 @@ def list_to_linked(ls: list):
 
 
 def linked_to_list(link: ListNode):
+    if not link:
+        return []
+
     l = [link.val]
     next_ = link.next
     while next_ is not None:
