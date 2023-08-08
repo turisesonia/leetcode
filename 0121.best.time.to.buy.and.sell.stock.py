@@ -31,14 +31,16 @@ from typing import List
 
 def max_profit(prices: List[int]) -> int:
     """
-    find minimum value and maximum which minimum value need left of max
+    Find the minimum and maximum value in the prices list,
+    and ensuring that the minimum value must be on the left of maximum value
     """
+
     max_ = 0
     min_ = prices[0]
 
-    for p in prices:
-        min_ = min(p, min_)
+    for p in prices[1:]:
         max_ = max(max_, p - min_)
+        min_ = min(p, min_)
 
     return max_
 
