@@ -29,6 +29,10 @@ return slow
 ```
 
 
+### LeetCode problem No.
+- [141 : Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+- [2095 : Delete the middle node of a linked list](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)
+
 
 ### Reference
 - [快慢指針（Fast-slow Pointers）](https://hackmd.io/@Hsins/fast-slow-pointers#%E4%BE%8B%E9%A1%8C-%E9%8F%88%E8%A1%A8%E7%9A%84%E4%B8%AD%E9%96%93%E7%B5%90%E9%BB%9E%EF%BC%88Middle-of-the-Linked-List%EF%BC%89)
