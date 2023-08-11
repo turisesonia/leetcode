@@ -33,18 +33,19 @@ Constraints:
 1 <= columnNumber <= 231 - 1
 """
 
-# def convert_title_int(title: str) -> int:
-#     alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-#     str_len = len(title)
+def convert_title_to_int(title: str) -> int:
+    alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-#     num = 0
-#     for i in range(str_len):
-#         dig = str_len - i - 1
+    str_len = len(title)
 
-#         num += 26**dig * (alph.index(title[i]) + 1)
+    num = 0
+    for i in range(str_len):
+        dig = str_len - i - 1
 
-#     return num
+        num += 26**dig * (alph.index(title[i]) + 1)
+
+    return num
 
 
 # if __name__ == "__main__":
@@ -54,27 +55,31 @@ Constraints:
 #     assert convert_title_int("ABABAB") == 12814284
 
 
-def convert_to_title(columnNumber: int) -> str:
+def convert_int_to_title(columnNumber: int) -> str:
+    """
+    26 進制
+    """
+
     alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-    mod = columnNumber % 26
-    print(mod)
-    columnNumber -= mod
-
-    times = 0
+    result = ""
 
     while columnNumber > 0:
-        print('--', columnNumber)
+        # excel column 沒有 0 的概念, 所以在每次開始計算時都先扣 1
+        columnNumber -= 1
+
+        # 找出餘數後就是這個位數的字母
+        m = columnNumber % 26
+        result = alph[m] + result
+
+        # 原來的數字在除 26 只得到商
         columnNumber = columnNumber // 26
-        times += 1
 
-    print(times, mod)
-
-    return alph[mod - 1]
+    return result
 
 
 if __name__ == "__main__":
-    # assert convert_to_title(1) == "A"
-    # assert convert_to_title(28) == "AB"
-    # assert convert_to_title(701) == "ZY"
-    assert convert_to_title(12814284) == "ABABAB"
+    assert convert_int_to_title(1) == "A"
+    assert convert_int_to_title(28) == "AB"
+    assert convert_int_to_title(701) == "ZY"
+    assert convert_int_to_title(12814284) == "ABABAB"
