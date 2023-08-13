@@ -232,6 +232,5 @@ sw.*
 # Vim swap files
 *.swp
 
+poetry.lock
 yarn.lock
-
-alembic.ini
