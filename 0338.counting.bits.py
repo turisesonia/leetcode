@@ -29,17 +29,22 @@ Explanation:
 7 --> 111
 8 --> 1000
 9 --> 1001
+10 --> 1010
 
 Constraints:
 0 <= n <= 105
 
 Follow up:
-It is very easy to come up with a solution with a runtime of O(n log n). Can you do it in linear time O(n) and possibly in a single pass?
-Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?
+It is very easy to come up with a solution with a runtime of O(n log n).
+Can you do it in linear time O(n) and possibly in a single pass ?
+Can you do it without using any built-in function (i.e., like __builtin_popcount in C++) ?
 """
 
 
 def count_bits(n: int) -> list[int]:
+    """
+    Not good
+    """
     res = []
 
     for i in range(n + 1):
@@ -57,7 +62,7 @@ def count_bits(n: int) -> list[int]:
 
 def count_bits(n: int) -> list[int]:
     res = [0 for _ in range(n + 1)]
-    print(res)
+
     prev = 2
 
     for i in range(n + 1):
@@ -65,33 +70,15 @@ def count_bits(n: int) -> list[int]:
             res[i] = i
             continue
 
-        if i % 2 == 0:
+        # find i where i equals 2**n and n is positive integer
+        if i % prev == 0:
             prev = i
 
-        print(i, prev)
+        # 第 i 個位置的 1 的數量剛好會是
+        # i - prev (目前所在 2 的 n 次方位置) 這個位置的 1 的數量 + 1
         res[i] = res[i - prev] + 1
 
-    print("------", n, " : ", res)
     return res
-
-
-def count_bits(n: int) -> list[int]:
-    if n == 0:
-        return [0]
-
-    dp = [0] * (n + 1)
-
-    print(dp)
-    dp[0] = 0
-    dp[1] = 1
-    low = 2
-    for i in range(2, n + 1):
-        if i % low == 0:
-            low = i
-        dp[i] = dp[i - low] + 1
-
-    print("------", n, " : ", dp)
-    return dp
 
 
 if __name__ == "__main__":
