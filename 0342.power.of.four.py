@@ -28,7 +28,14 @@ Follow up: Could you solve it without loops/recursion?
 
 
 def is_power_of_four(n: int) -> bool:
-    return n > 0 and n & (n - 1) == 0
+    """
+    Intuition solution using while loop
+    """
+
+    while n > 0 and not n % 4:
+        n //= 4
+
+    return n == 1
 
 
 if __name__ == "__main__":
