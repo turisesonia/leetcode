@@ -29,4 +29,5 @@
 ### Two Pointers
   - [0005 Longest Palindrome](0005.longest.palindrome.py)
 
-
+### Binary Search
+  - [0441 Arranging Coins](0441.arranging.coins.py)
