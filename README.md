@@ -31,3 +31,9 @@
 
 ### Binary Search
   - [0441 Arranging Coins](0441.arranging.coins.py)
+
+
+### Dynamic Programming
+  - [0014 Longest Common Prefix](0014.longest.common.prefix.py)
+  - [0053 Maxunum Subarry](0053.maxunum.subarry.py)
+  - [0070 Climbing Stairs](0070.climbing.stairs.py)
