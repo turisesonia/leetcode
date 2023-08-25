@@ -11,7 +11,7 @@
 ## Uncomprehended
   - [0007 Reverse Integer](0007.reverse.integer.py)
 
-## Group By Tag
+## Data structure & Algorithms
 
 ### Hash Map
   - [0001 Two Sum](0001.two.sum.py)
@@ -33,7 +33,11 @@
   - [0441 Arranging Coins](0441.arranging.coins.py)
 
 
-### Dynamic Programming
+### Dynamic Programming 動態規劃
   - [0014 Longest Common Prefix](0014.longest.common.prefix.py)
   - [0053 Maxunum Subarry](0053.maxunum.subarry.py)
   - [0070 Climbing Stairs](0070.climbing.stairs.py)
+
+### Greedy Algorithm 貪婪演算法
+  找出當下所有選擇中的最佳解
+  - [0455 Assign Cookies](0455.assign.cookies.py)
