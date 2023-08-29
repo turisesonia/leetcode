@@ -1,13 +1,13 @@
 from collections import deque
 
 
-class Node:
+class TreeNode:
     def __init__(self, value: int, left=None, right=None):
         """
         Args:
-            value (int): Node value.
-            left (Node, optional): Left node. Defaults to None.
-            right (Node, optional): Right node. Defaults to None.
+            value (int): TreeNode value.
+            left (TreeNode, optional): Left node. Defaults to None.
+            right (TreeNode, optional): Right node. Defaults to None.
         """
         self.value = value
         self.left = left
@@ -23,11 +23,11 @@ class BinarySearchTree:
 
     def insert(self, value):
         if not self.root:
-            self.root = Node(value)
+            self.root = TreeNode(value)
         else:
             self._insert(value, self.root)
 
-    def _insert(self, value: int, current: Node):
+    def _insert(self, value: int, current: TreeNode):
         """
         比較 value 和 current.value 的大小,
         value 較小加到左節點
@@ -36,10 +36,10 @@ class BinarySearchTree:
 
         Args:
             value (int): value
-            current (Node): Current node
+            current (TreeNode): Current node
         """
 
-        node = Node(value)
+        node = TreeNode(value)
 
         if current.value > value:
             if not current.left:

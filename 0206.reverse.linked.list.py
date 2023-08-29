@@ -27,7 +27,7 @@ Follow up: A linked list can be reversed either iteratively or recursively. Coul
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode, list_to_linked, linked_to_list
+from data_structure.linked import ListNode, list_to_linked, linked_to_list
 
 
 def reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:

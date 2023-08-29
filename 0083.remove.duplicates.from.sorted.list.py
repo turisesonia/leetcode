@@ -23,7 +23,7 @@ The list is guaranteed to be sorted in ascending order.
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode, list_to_linked, linked_to_list
+from data_structure.linked import ListNode, list_to_linked, linked_to_list
 
 
 def delete_duplicates(head: Optional[ListNode]) -> Optional[ListNode]:

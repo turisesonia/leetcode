@@ -39,7 +39,7 @@ The number of nodes in the list is in the range [1, 105].
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode, list_to_linked, linked_to_list
+from data_structure.linked import ListNode, list_to_linked, linked_to_list
 
 
 def delete_middle(head: Optional[ListNode]) -> Optional[ListNode]:

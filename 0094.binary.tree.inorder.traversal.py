@@ -22,11 +22,11 @@ Output: [1]
 Follow up: Recursive solution is trivial, could you do it iteratively?
 """
 from typing import Optional, List
-from data_structure.binary_tree import Node
+from data_structure.tree import TreeNode
 
 
 # 遞迴解法
-def inorder_traversal_recursive(root: Optional[Node]) -> List[int]:
+def inorder_traversal_recursive(root: Optional[TreeNode]) -> List[int]:
     ls = []
 
     _traversal(root, ls)
@@ -34,7 +34,7 @@ def inorder_traversal_recursive(root: Optional[Node]) -> List[int]:
     return ls
 
 
-def _traversal(current: Node, ls: list):
+def _traversal(current: TreeNode, ls: list):
     if not current:
         return
 
@@ -49,7 +49,7 @@ def _traversal(current: Node, ls: list):
 
 
 # 迭代解法
-def inorder_traversal_iter(root: Optional[Node]) -> List[int]:
+def inorder_traversal_iter(root: Optional[TreeNode]) -> List[int]:
     """
     中序遍歷的順序為 left -> root -> right
     1. 首先一直往左走直到碰到 null 為止, 並將沿路走過的節點存入 stack (堆疊: 後進先出)

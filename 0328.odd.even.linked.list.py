@@ -35,7 +35,7 @@ Memory 18.9 MB Beats 91.1%
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode, list_to_linked, linked_to_list
+from data_structure.linked import ListNode, list_to_linked, linked_to_list
 
 
 def odd_even_list(head: Optional[ListNode]) -> Optional[ListNode]:

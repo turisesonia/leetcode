@@ -40,7 +40,7 @@ Slow & Fast Pointers (Hare & Tortoise Algorithm)
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode
+from data_structure.linked import ListNode
 
 
 def has_cycle(head: Optional[ListNode]) -> bool:

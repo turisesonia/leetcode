@@ -24,7 +24,7 @@ Output: [8,9,9,9,0,0,0,1]
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode, list_to_linked
+from data_structure.linked import ListNode, list_to_linked
 
 
 # v1

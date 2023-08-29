@@ -55,7 +55,7 @@ Follow up: Could you write a solution that runs in O(m + n) time and use only O(
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode, list_to_linked
+from data_structure.linked import ListNode, list_to_linked
 
 
 def get_intersection_node(headA: ListNode, headB: ListNode) -> Optional[ListNode]:

@@ -24,7 +24,7 @@ Follow up: Could you do it in O(n) time and O(1) space?
 """
 
 from typing import Optional
-from data_structure.linked_list import ListNode, list_to_linked
+from data_structure.linked import ListNode, list_to_linked
 
 
 def is_palindrome(head: Optional[ListNode]) -> bool:
