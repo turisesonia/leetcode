@@ -35,6 +35,7 @@
 
 ### Binary Tree
   - [0100 Same Tree](0100.same.tree.py)
+  - [0101 Symmetric Tree](0101.symmetric.tree.py)
 
 ### Two Pointers
   - [0005 Longest Palindrome](0005.longest.palindrome.py)
