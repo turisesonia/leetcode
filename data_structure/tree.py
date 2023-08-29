@@ -2,63 +2,86 @@ from collections import deque
 
 
 class TreeNode:
-    def __init__(self, value: int, left=None, right=None):
+    def __init__(self, val: int, left=None, right=None):
         """
         Args:
-            value (int): TreeNode value.
+            val (int): TreeNode val.
             left (TreeNode, optional): Left node. Defaults to None.
             right (TreeNode, optional): Right node. Defaults to None.
         """
-        self.value = value
+        self.val = val
         self.left = left
         self.right = right
 
     def __repr__(self):
-        return str(self.value)
+        return f"Node: {self.val}, Left: {self.left}, Right: {self.right}"
+
+    def __str__(self):
+        return str(self.val)
+
+
+def list_to_binary_tree(items: list):
+    n = len(items)
+
+    if n == 0:
+        return None
+
+    def inner(index: int = 0) -> TreeNode:
+        if n <= index or items[index] is None:
+            return None
+
+        node = TreeNode(items[index])
+
+        node.left = inner(2 * index + 1)
+        node.right = inner(2 * index + 2)
+
+        return node
+
+    return inner()
 
 
 class BinarySearchTree:
     def __init__(self):
         self.root = None
 
-    def insert(self, value):
+    def insert(self, val):
         if not self.root:
-            self.root = TreeNode(value)
+            self.root = TreeNode(val)
         else:
-            self._insert(value, self.root)
+            self._insert(val, self.root)
 
-    def _insert(self, value: int, current: TreeNode):
+    def _insert(self, val: int, current: TreeNode):
         """
-        比較 value 和 current.value 的大小,
-        value 較小加到左節點
-        value 較大加到右節點
+        比較 val 和 current.val 的大小,
+        val 較小加到左節點
+        val 較大加到右節點
         如果 ( 左 / 右 ) 節點均已存在, 則遞迴往下判斷
 
         Args:
-            value (int): value
+            val (int): val
             current (TreeNode): Current node
         """
 
-        node = TreeNode(value)
+        node = TreeNode(val)
 
-        if current.value > value:
+        if current.val > val:
             if not current.left:
                 current.left = node
             else:
-                self._insert(value, current.left)
+                self._insert(val, current.left)
 
-        elif current.value < value:
+        elif current.val < val:
             if not current.right:
                 current.right = node
             else:
-                self._insert(value, current.right)
+                self._insert(val, current.right)
 
         else:
-            # value is exists
-            print(f"value: {value} exists")
+            # val is exists
+            print(f"val: {val} exists")
 
     def __repr__(self):
-        return f"{self.root.value}"
+        return f"{self.root.val}"
 
     def in_order_traversal(self):
         """中序遍歷
@@ -90,4 +113,4 @@ class BinarySearchTree:
             if node.right:
                 dq.append(node.right)
 
-            print(node.value)
+            print(node.val)
