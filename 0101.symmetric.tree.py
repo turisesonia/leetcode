@@ -2,6 +2,7 @@
 # 101
 Easy
 Symmetric Tree
+(Mirror Tree)
 
 https://leetcode.com/problems/symmetric-tree/
 
