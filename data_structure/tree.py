@@ -40,6 +40,30 @@ def list_to_binary_tree(items: list):
     return inner()
 
 
+def binary_tree_to_list(root: TreeNode):
+    from collections import deque
+
+    res = []
+
+    if not root:
+        return res
+
+    queue = deque()
+    queue.append(root)
+
+    while queue:
+        node = queue.popleft()
+        res.append(node.val)
+
+        if node.left:
+            queue.append(node.left)
+
+        if node.right:
+            queue.append(node.right)
+
+    return res
+
+
 class BinarySearchTree:
     def __init__(self):
         self.root = None
