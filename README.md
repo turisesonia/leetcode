@@ -39,6 +39,9 @@
   - [0104 Maximum Depth Of Binary Tree](0104.maximum.depth.of.binary.tree.py)
     > Stack 解法比較容易理解 (DFS)
   - [0108 Convert Sorted Array To Binary Search Tree](0108.convert.sorted.array.to.binary.search.tree.py)
+  - [0110 Balanced Binary Tree](0110.balanced.binary.tree.py)
+  - [0111 Minimum Depth Of Binary Tree](0111.minimum.depth.of.binary.tree.py)
+    > Queue 解法較容易理解, 只要找到第一個 leaf node 即為最小深度
 
 ### Two Pointers
   - [0005 Longest Palindrome](0005.longest.palindrome.py)
