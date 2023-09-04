@@ -42,6 +42,8 @@
   - [0110 Balanced Binary Tree](0110.balanced.binary.tree.py)
   - [0111 Minimum Depth Of Binary Tree](0111.minimum.depth.of.binary.tree.py)
     > Queue 解法較容易理解, 只要找到第一個 leaf node 即為最小深度
+  - [0112 Path Sum](0112.path.sum.py)
+    > Stack 解法較容易理解
 
 ### Two Pointers
   - [0005 Longest Palindrome](0005.longest.palindrome.py)
