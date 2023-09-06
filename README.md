@@ -51,6 +51,9 @@
 ### Binary Search
   - [0441 Arranging Coins](0441.arranging.coins.py)
 
+### Sliding Window
+  - [1493 Logest Subarray Of 1's After Deleting One Element (Medium)](1493.logest.subarray.of.1's.after.deleting.one.element.py)
+
 
 ### Dynamic Programming 動態規劃
   - [0014 Longest Common Prefix](0014.longest.common.prefix.py)
