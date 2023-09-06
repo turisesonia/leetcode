@@ -9,7 +9,7 @@ Given an encoded string, return its decoded string.
 給定一個編碼過的字串，回傳已解碼後的結果
 
 The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times.
-編碼的規則是: k[encoded_string] 中括號內的字串代表要被重複的字串，而 k 為要重複的次數
+編碼的規則是: k[encoded_string] 中括號內的字串代表要被重複的字串，而 k 為重複的次數
 
 Note that k is guaranteed to be a positive integer.
 k 保證一定是正數
@@ -43,14 +43,38 @@ All the integers in s are in the range [1, 300].
 
 def decode_string(s: str) -> str:
     stack = []
-    for c in s:
-        if c.isnumeric():
-            stack.append(int(c))
 
-        pass
+    for c in s:
+        # the left square bracket, check previous number
+        if c == "[":
+            num = ""
+            while len(stack) > 0 and stack[-1].isnumeric():
+                num = stack.pop() + num
+
+            stack.append(int(num))
+            stack.append("[")
+
+        # the right square bracket, remove and get the element from the stack until get "["
+        elif c == "]":
+            p = ""
+            n = stack.pop()
+            while n != "[":
+                # combine the element (n) as a string pattern
+                p = n + p
+                n = stack.pop()
+
+            # Retrieve the number from the stack; it represents the number of times the string should be repeated.
+            times = stack.pop()
+            stack.append(p * times)
+
+        else:
+            stack.append(c)
+
+    return "".join(stack)
 
 
 if __name__ == "__main__":
     assert decode_string("3[a]2[bc]") == "aaabcbc"
     assert decode_string("3[a2[c]]") == "accaccacc"
     assert decode_string("2[abc]3[cd]ef") == "abcabccdcdcdef"
+    assert decode_string("10[a]") == "aaaaaaaaaa"

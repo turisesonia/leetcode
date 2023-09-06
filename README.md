@@ -22,6 +22,7 @@
 
 ### Stack
   - [0003 Longest Substring Without Repeating Characters](0003.longest.substring.without.repeating.characters.py)
+  - [0394 Decode String (Medium)](0394.decode.string.py)
 
 ### Linked List
   - [0002 Add Two Numbers](0002.add.two.numbers.py)
