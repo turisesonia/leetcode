@@ -49,7 +49,9 @@
   - [0145 Binary Tree Postorder Traversal](0145.binary.tree.postorder.traversal.py)
   - [0222 Count Complete Tree Nodes](0222.count.complete.tree.nodes.py)
   - [0226 Invert Binary Tree](0226.invert.binary.tree.py)
+  - [0257 Binary Tree Path](0257.binary.tree.path.py)
   - [0872 Leaf Similar Trees](0872.leaf.similar.trees.py)
+  - [1448 Count Good Nodes In Binary Tree `Medium` `LeetCode 75`](1448.count.good.nodes.in.binary.tree.py)
 
 
 ### Two Pointers
@@ -59,7 +61,7 @@
   - [0441 Arranging Coins](0441.arranging.coins.py)
 
 ### Sliding Window
-  - [1493 Logest Subarray Of 1's After Deleting One Element (Medium)](1493.logest.subarray.of.1's.after.deleting.one.element.py)
+  - [1493 Logest Subarray Of 1's After Deleting One Element `Medium`](1493.logest.subarray.of.1's.after.deleting.one.element.py)
 
 
 ### Dynamic Programming 動態規劃
