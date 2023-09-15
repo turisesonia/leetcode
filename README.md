@@ -46,6 +46,7 @@
     > Queue 解法較容易理解, 只要找到第一個 leaf node 即為最小深度
   - [0112 Path Sum](0112.path.sum.py)
     > Stack 解法較容易理解
+  - [0113 Path Sum II `Medium`](0113.path.sum.ii.py)
   - [0144 Binary Tree Preorder Traversal](0144.binary.tree.preorder.traversal.py)
   - [0145 Binary Tree Postorder Traversal](0145.binary.tree.postorder.traversal.py)
   - [0222 Count Complete Tree Nodes](0222.count.complete.tree.nodes.py)
