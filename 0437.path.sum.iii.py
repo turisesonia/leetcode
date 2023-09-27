@@ -30,33 +30,40 @@ from typing import Optional
 from data_structure.tree import TreeNode
 
 
-def path_sum(root: Optional[TreeNode], targetSum: int) -> int:
-    if not root:
-        return 0
+class Solution:
+    def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
+        # Record the sum of prefix paths before the current node
+        # Set key:value = 0:1 to represent that the root node's value is equal to targetSum
+        hm = {0: 1}
 
-    count = 0
-    stack = [(root, 0)]
+        # the number of path sum equals to targetSum
+        self.ans = 0
 
-    while stack:
-        node, prev = stack.pop()
+        def dfs(node: Optional[TreeNode], prev_sum: int):
+            if not node:
+                return
 
-        sum_ = prev + node.val
+            # get the paths sum from root node to current node
+            path_sum = prev_sum + node.val
 
-        if sum_ == targetSum:
-            count += 1
-            prev = 0
-        elif sum_ > targetSum:
-            prev = 0
-        else:
-            prev = sum_
+            # 如果 path_sum 減去 targerSum 的值有出現在先前紀錄的 hm (prefix paths sum) 內
+            # 代表此路徑是要找的答案
+            needed = path_sum - targetSum
+            self.ans += hm.get(needed, 0)
 
-        if node.right:
-            stack.append((node.right, prev))
+            # 將現在的路徑和記錄起來
+            hm[path_sum] = hm.get(path_sum, 0) + 1
 
-        if node.left:
-            stack.append((node.left, prev))
+            # 繼續往下找
+            dfs(node.left, path_sum)
+            dfs(node.right, path_sum)
 
-    return count
+            # ! 這段 node 以下的路徑已經都全部找完了，扣掉 1 以免別的路徑有相同的 preifx sum
+            hm[path_sum] -= 1
+
+        dfs(root, 0)
+
+        return self.ans
 
 
 if __name__ == "__main__":
