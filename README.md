@@ -38,6 +38,7 @@
 ### Binary Tree
   - [0100 Same Tree](0100.same.tree.py)
   - [0101 Symmetric Tree](0101.symmetric.tree.py)
+  - [0102 Binary Tree Level Order Traversal `Medium` `BFS`](0102.binary.tree.level.order.traversal.py)
   - [0104 Maximum Depth Of Binary Tree](0104.maximum.depth.of.binary.tree.py)
     > Stack 解法比較容易理解 (DFS)
   - [0108 Convert Sorted Array To Binary Search Tree](0108.convert.sorted.array.to.binary.search.tree.py)
@@ -56,6 +57,8 @@
   - [0437 Path Sum III `Medium` `DFS`](0437.path.sum.iii.py)
     > 看起來必須要使用遞迴才能解，需複習
   - [0872 Leaf Similar Trees](0872.leaf.similar.trees.py)
+  - [1372 Longest Zigzag Path In A Binary Tree `Medium` `DFS`](1372.longest.zigzag.path.in.a.binary.tree.py)
+    > 遞迴、並在連續方向時將先前的路徑總和重設為 0
   - [1448 Count Good Nodes In Binary Tree `Medium` `LeetCode 75`](1448.count.good.nodes.in.binary.tree.py)
 
 
