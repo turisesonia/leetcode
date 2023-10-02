@@ -36,6 +36,7 @@
   - [2130 Maximum Twin Sum Of A Linked List `Medium` `LeetCode 75` `Slow Fast`](2130.maximum.twin.sum.of.a.linked.list.py)
 
 ### Binary Tree
+  - [0094 Binary Tree Inorder Traversal `Easy`](0094.binary.tree.inorder.traversal.py)
   - [0100 Same Tree](0100.same.tree.py)
   - [0101 Symmetric Tree](0101.symmetric.tree.py)
   - [0102 Binary Tree Level Order Traversal `Medium` `BFS`](0102.binary.tree.level.order.traversal.py)

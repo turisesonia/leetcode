@@ -7,6 +7,16 @@ https://leetcode.com/problems/binary-tree-inorder-traversal/
 
 Given the root of a binary tree, return the inorder traversal of its nodes' values.
 
+中序 (inorder): left -> root -> right
+
+    1
+   / \
+  2   3
+ / \ / \
+4  5 6  7
+
+=> 4 -> 2 -> 5 -> 1 -> 6 -> 3 -> 7
+
 Example 1:
 Input: root = [1,null,2,3]
 Output: [1,3,2]
@@ -58,11 +68,10 @@ def inorder_traversal_iter(root: Optional[TreeNode]) -> List[int]:
     4. 之後再重複 1 ~ 3 直到 current = None 且 stack 為空
     """
 
-    result = []
-
     if not root:
-        return result
+        return []
 
+    result = []
     stack = []
     current = root
 
