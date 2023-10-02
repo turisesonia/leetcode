@@ -59,6 +59,7 @@
   - [0404 Sum Of Left Leaves `Easy` `DFS`](0404.sum.of.left.leaves.py)
   - [0437 Path Sum III `Medium` `DFS`](0437.path.sum.iii.py)
     > 看起來必須要使用遞迴才能解，需複習
+  - [0700 Search In A Binary Search Tree `Easy` `BST` `LeetCode 75`](0700.search.in.a.binary.search.tree.py)
   - [0872 Leaf Similar Trees](0872.leaf.similar.trees.py)
   - [0199 Maximum Level Sum Of A Binary Tree `Medium` `BFS` `LeetCode 75`](1161.maximum.level.sum.of.a.binary.tree.py)
   - [1372 Longest Zigzag Path In A Binary Tree `Medium` `DFS`](1372.longest.zigzag.path.in.a.binary.tree.py)
