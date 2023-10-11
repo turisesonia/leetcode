@@ -20,6 +20,9 @@
   - [0389 Find The Difference](0389.find.the.difference.py)
   - [0409 Longest Palindrome](0409.longest.palindrome.py)
 
+### Array
+  - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
+
 ### Stack
   - [0003 Longest Substring Without Repeating Characters](0003.longest.substring.without.repeating.characters.py)
   - [0394 Decode String (Medium)](0394.decode.string.py)
