@@ -21,6 +21,7 @@
   - [0409 Longest Palindrome](0409.longest.palindrome.py)
 
 ### Array
+  - [0056 Merge Intervals `Easy`](0056.merge.intervals.py)
   - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
 
 ### Stack
