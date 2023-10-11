@@ -49,44 +49,6 @@ from typing import Optional
 from data_structure.tree import TreeNode
 
 
-class Solution:
-    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
-        if not root or root.val == key:
-            return None
-
-        prev = None
-        node = root
-
-        while node:
-            if node.val == key:
-                if not node.left and not node.right:
-                    if node.val > prev.val:
-                        prev.right = None
-                    else:
-                        prev.left = None
-                elif not node.left:
-                    if node.val > prev.val:
-                        prev.right = node.right
-                    else:
-                        prev.left = node.right
-                elif not node.right:
-                    if node.val > prev.val:
-                        prev.right = None
-                    else:
-                        prev.left = None
-                    pass
-
-            elif node.val > key:
-                prev = node
-                node = node.left
-
-            elif node.val < key:
-                prev = node
-                node = node.right
-
-        return root
-
-
 class SolutionFromLeetCode:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         if not root:
@@ -107,11 +69,14 @@ class SolutionFromLeetCode:
 
             # two child
             else:
+                # * Find the inorder successor node
                 curr = root.right
                 while curr.left:
                     curr = curr.left
 
+                # * Replace inorder successor node val to deleted val
                 root.val = curr.val
+                # * 往下刪除此 inorder successor node
                 root.right = self.deleteNode(root.right, curr.val)
 
         return root
