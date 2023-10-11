@@ -49,7 +49,7 @@ from typing import Optional
 from data_structure.tree import TreeNode
 
 
-class SolutionFromLeetCode:
+class Solution:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         if not root:
             return None
