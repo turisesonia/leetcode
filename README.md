@@ -22,6 +22,7 @@
 
 ### Array
   - [0056 Merge Intervals `Easy`](0056.merge.intervals.py)
+  - [0506 Relative Ranks `Easy` `HashMap` `Max Heap`](0506.relative.ranks.py)
   - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
 
 ### Stack
