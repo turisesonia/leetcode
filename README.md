@@ -19,6 +19,7 @@
   - [0387 First Unique Character In A String](0387.first.unique.character.in.a.string.py)
   - [0389 Find The Difference](0389.find.the.difference.py)
   - [0409 Longest Palindrome](0409.longest.palindrome.py)
+  - [1464 Maximum Product Of Two Elements In An Array `Easy`](1464.maximum.product.of.two.elements.in.an.array.py)
 
 ### Array
   - [0056 Merge Intervals `Easy`](0056.merge.intervals.py)
