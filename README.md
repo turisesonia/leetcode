@@ -86,7 +86,9 @@
   - [0005 Longest Palindrome](0005.longest.palindrome.py)
 
 ### Binary Search
-  - [0441 Arranging Coins](0441.arranging.coins.py)
+  - [0374 Guess Number Higher Or Lower `Easy` `LeetCode 75`](0374.guess.number.higher.or.lower.py)
+  - [0441 Arranging Coins `Easy`](0441.arranging.coins.py)
+  - [2300 Successful Pairs Of Spells And Potions `Medium` `LeetCode 75`](2300.successful.pairs.of.spells.and.potions.py)
 
 ### Sliding Window
   - [1493 Logest Subarray Of 1's After Deleting One Element `Medium`](1493.logest.subarray.of.1's.after.deleting.one.element.py)
