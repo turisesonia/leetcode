@@ -83,9 +83,10 @@
   - [0841 Keys And Rooms `Medium` `DFS` `LeetCode 75`](0841.keys.and.rooms.py)
 
 ### Two Pointers
-  - [0005 Longest Palindrome](0005.longest.palindrome.py)
+  - [0005 Longest Palindrome `Medium`](0005.longest.palindrome.py)
 
 ### Binary Search
+  - [0162 Find Peak Element `Medium` `LeetCode 75`](0162.find.peak.element.py)
   - [0374 Guess Number Higher Or Lower `Easy` `LeetCode 75`](0374.guess.number.higher.or.lower.py)
   - [0441 Arranging Coins `Easy`](0441.arranging.coins.py)
   - [2300 Successful Pairs Of Spells And Potions `Medium` `LeetCode 75`](2300.successful.pairs.of.spells.and.potions.py)
