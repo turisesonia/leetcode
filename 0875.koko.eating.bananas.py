@@ -41,26 +41,29 @@ from math import ceil
 
 
 def min_eating_speed(piles: list[int], h: int) -> int:
+    # 第一步算出在 h 小時內可以吃完全部香蕉的每小時速率
     left, right = ceil(sum(piles) / h), max(piles)
-    while left != right:
-        mid = (left + right) // 2
-        print(left, mid, right)
 
+    # binary search
+    while left < right:
+        mid = (left + right) // 2
+
+        # 計算此速率吃完每一堆香蕉的時間
         use_hours = 0
         for pile in piles:
             use_hours += ceil(pile / mid)
 
+        # 此速率快於或等於 h 值, 移動右邊指標
         if use_hours <= h:
             right = mid
         else:
-            left = left + 1
+            left = mid + 1
 
-    print(left)
     return left
 
 
 if __name__ == "__main__":
-    # assert min_eating_speed([3, 6, 7, 11], h=8) == 4
-    # assert min_eating_speed([30, 11, 23, 4, 20], h=5) == 30
-    # assert min_eating_speed([30, 11, 23, 4, 20], h=6) == 23
+    assert min_eating_speed([3, 6, 7, 11], h=8) == 4
+    assert min_eating_speed([30, 11, 23, 4, 20], h=5) == 30
+    assert min_eating_speed([30, 11, 23, 4, 20], h=6) == 23
     assert min_eating_speed([1000000000, 1000000000], h=3)

@@ -89,6 +89,7 @@
   - [0162 Find Peak Element `Medium` `LeetCode 75`](0162.find.peak.element.py)
   - [0374 Guess Number Higher Or Lower `Easy` `LeetCode 75`](0374.guess.number.higher.or.lower.py)
   - [0441 Arranging Coins `Easy`](0441.arranging.coins.py)
+  - [0875 Koko Eating Bananas `Medium` `LeetCode 75`](0875.koko.eating.bananas.py)
   - [2300 Successful Pairs Of Spells And Potions `Medium` `LeetCode 75`](2300.successful.pairs.of.spells.and.potions.py)
 
 ### Sliding Window
