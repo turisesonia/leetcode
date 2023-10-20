@@ -28,8 +28,9 @@
   - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
 
 ### Stack
-  - [0003 Longest Substring Without Repeating Characters](0003.longest.substring.without.repeating.characters.py)
-  - [0394 Decode String (Medium)](0394.decode.string.py)
+  - [0003 Longest Substring Without Repeating Characters `Medium`](0003.longest.substring.without.repeating.characters.py)
+  - [0394 Decode String `Medium`](0394.decode.string.py)
+  - [0496 Next Greater Element I `Easy`](0496.next.greater.element.i.py)
 
 ### Linked List
   - [0002 Add Two Numbers](0002.add.two.numbers.py)
