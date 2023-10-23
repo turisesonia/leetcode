@@ -99,6 +99,10 @@
   - [1493 Logest Subarray Of 1's After Deleting One Element `Medium`](1493.logest.subarray.of.1's.after.deleting.one.element.py)
 
 
+### Backtracking
+  - [0017 Letter Combinations Of A Phone Number `Medium` `LeetCode 75`](0017.letter.combinations.of.a.phone.number.py)
+  - [遞迴 (Recursion) - Backtracking](https://medium.com/appworks-school/%E9%80%B2%E5%85%A5%E9%81%9E%E8%BF%B4-recursion-%E7%9A%84%E4%B8%96%E7%95%8C-%E4%B8%89-d2fd70b5b171)
+
 ### Dynamic Programming 動態規劃
   - [0014 Longest Common Prefix](0014.longest.common.prefix.py)
   - [0053 Maxunum Subarry](0053.maxunum.subarry.py)
