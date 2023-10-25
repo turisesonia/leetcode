@@ -117,3 +117,7 @@
 ### Greedy Algorithm 貪婪演算法
   找出當下所有選擇中的最佳解
   - [0455 Assign Cookies](0455.assign.cookies.py)
+
+
+### Uncategorized
+  - [0520 Detect Capital `Easy` `String`](0520.detect.capital.py)
