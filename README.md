@@ -34,6 +34,9 @@
   - [0394 Decode String `Medium`](0394.decode.string.py)
   - [0496 Next Greater Element I `Easy`](0496.next.greater.element.i.py)
 
+### Math
+  - [0507 Perfect Number `Easy` `Math` `Divisor`](0507.perfect.number.py)
+
 ### Linked List
   - [0002 Add Two Numbers](0002.add.two.numbers.py)
   - [0083 Remove Duplicates From Sorted List](0083.remove.duplicates.from.sorted.list.py)
