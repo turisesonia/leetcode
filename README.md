@@ -31,8 +31,11 @@
 
 ### Stack
   - [0003 Longest Substring Without Repeating Characters `Medium`](0003.longest.substring.without.repeating.characters.py)
-  - [0394 Decode String `Medium`](0394.decode.string.py)
+  - [0394 Decode String `Medium` `LeetCode 75`](0394.decode.string.py)
   - [0496 Next Greater Element I `Easy`](0496.next.greater.element.i.py)
+  - [0735 Asteroid Collision `Medium` `LeetCode 75`](0735.asteroid.collision.py)
+  - [0739 Daily Temperatures `Medium` `LeetCode 75`](0739.daily.temperatures.py)
+  - [2390 Removing Starts From A String `Medium` `LeetCode 75`](2390.removing.starts.from.a.string.py)
 
 ### Math
   - [0507 Perfect Number `Easy` `Math` `Divisor`](0507.perfect.number.py)
