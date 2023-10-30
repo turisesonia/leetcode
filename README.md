@@ -38,6 +38,7 @@
   - [0496 Next Greater Element I `Easy`](0496.next.greater.element.i.py)
   - [0735 Asteroid Collision `Medium` `LeetCode 75`](0735.asteroid.collision.py)
   - [0739 Daily Temperatures `Medium` `LeetCode 75`](0739.daily.temperatures.py)
+  - [0901 Online Stock Span `Medium` `LeetCode 75`](0901.online.stock.span.py)
   - [2390 Removing Starts From A String `Medium` `LeetCode 75`](2390.removing.starts.from.a.string.py)
 
 ### Math
