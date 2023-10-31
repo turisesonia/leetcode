@@ -110,7 +110,6 @@
 ### Sliding Window
   - [1493 Logest Subarray Of 1's After Deleting One Element `Medium`](1493.logest.subarray.of.1's.after.deleting.one.element.py)
 
-
 ### Backtracking
   - [遞迴 (Recursion) - Backtracking](https://medium.com/appworks-school/%E9%80%B2%E5%85%A5%E9%81%9E%E8%BF%B4-recursion-%E7%9A%84%E4%B8%96%E7%95%8C-%E4%B8%89-d2fd70b5b171)
   - [0017 Letter Combinations Of A Phone Number `Medium` `LeetCode 75`](0017.letter.combinations.of.a.phone.number.py)
@@ -125,6 +124,10 @@
 ### Greedy Algorithm 貪婪演算法
   找出當下所有選擇中的最佳解
   - [0455 Assign Cookies](0455.assign.cookies.py)
+
+### Trie
+  文字版的 Tree (字典樹, 可用於單字拼音檢查, 模糊搜尋)
+  - [0208 Implement Trie (Prefix Tree) `Medium` `TrieNode`](0208.implement.trie.prefix.tree.py)
 
 
 ### Uncategorized
