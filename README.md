@@ -127,7 +127,7 @@
 
 ### Trie
   文字版的 Tree (字典樹, 可用於單字拼音檢查, 模糊搜尋)
-  - [0208 Implement Trie (Prefix Tree) `Medium` `TrieNode`](0208.implement.trie.prefix.tree.py)
+  - [0208 Implement Trie (Prefix Tree) `Medium` `TrieNode` `LeetCode 75`](0208.implement.trie.prefix.tree.py)
 
 
 ### Uncategorized
