@@ -18,7 +18,8 @@
   - [0008 String To Integer Atoi `Medium`](0008.string.to.integer.atoi.py)
 
 ### Hash Map
-  - [0001 Two Sum](0001.two.sum.py)
+  - [0001 Two Sum `Easy`](0001.two.sum.py)
+  - [0008 String To Integer Atoi `Medium` `Math` `String`](0008.string.to.integer.atoi.py)
   - [0383 Ransom Node](0383.ransom.node.py)
   - [0387 First Unique Character In A String](0387.first.unique.character.in.a.string.py)
   - [0389 Find The Difference](0389.find.the.difference.py)
