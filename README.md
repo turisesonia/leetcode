@@ -13,6 +13,10 @@
 
 ## Data structure & Algorithms
 
+
+### String
+  - [0008 String To Integer Atoi `Medium`](0008.string.to.integer.atoi.py)
+
 ### Hash Map
   - [0001 Two Sum](0001.two.sum.py)
   - [0383 Ransom Node](0383.ransom.node.py)
