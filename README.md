@@ -132,3 +132,4 @@
 
 ### Uncategorized
   - [0520 Detect Capital `Easy` `String`](0520.detect.capital.py)
+  - [0521 Longest Uncommon Subsequence `Easy` `String`](0521.longest.uncommon.subsequence.py)
