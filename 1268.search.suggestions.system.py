@@ -92,7 +92,21 @@ class Solution:
 
         return products[:3]
 
-# TODO 想更快的解法
+
+class Solution:
+    def suggestedProducts(self, products: List[str], searchWord: str) -> List[List[str]]:
+        products.sort()
+
+        result = []
+
+        for i in range(1, len(searchWord) + 1):
+            prefix = searchWord[:i]
+
+            suggests = [product for product in products if product.startswith(prefix)]
+            result.append(suggests[:3])
+
+        return result
+
 
 if __name__ == "__main__":
     suggestions = Solution().suggestedProducts(
