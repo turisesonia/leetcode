@@ -26,7 +26,9 @@
   - [0409 Longest Palindrome](0409.longest.palindrome.py)
   - [0500 Keyboard Row `Easy`](0500.keyboard.row.py)
   - [0819 Most Common Word `Easy` `String` `Counter`](0819.most.common.word.py)
+  - [1207 Unique Number Of Occurrences `Easy` `LeetCode 75`](1207.unique.number.of.occurrences.py)
   - [1464 Maximum Product Of Two Elements In An Array `Easy`](1464.maximum.product.of.two.elements.in.an.array.py)
+  - [2215 Find The Difference Of Two Arrays `Easy` `LeetCode 75`](2215.find.the.difference.of.two.arrays.py)
 
 ### Array
   - [0056 Merge Intervals `Easy`](0056.merge.intervals.py)

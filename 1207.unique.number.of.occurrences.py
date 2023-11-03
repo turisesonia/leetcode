@@ -28,17 +28,11 @@ from typing import List
 
 
 def unique_occurrences(arr: List[int]) -> bool:
-    counter = {}
+    hm = {}
+    for num in arr:
+        hm[num] = hm.get(num, 0) + 1
 
-    for n in arr:
-        if n not in counter:
-            counter[n] = 1
-        else:
-            counter[n] += 1
-
-    occurences = counter.values()
-
-    return len(occurences) == len(set(occurences))
+    return len(set(hm.values())) == len(set(hm.keys()))
 
 
 if __name__ == "__main__":
