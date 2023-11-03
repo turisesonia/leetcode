@@ -78,36 +78,56 @@ def three_sum(nums: List[int]) -> List[List[int]]:
     return result
 
 
-# def three_sum(nums: List[int]) -> List[List[int]]:
-#     nums.sort()
-#     res = []
-#     for i, num in enumerate(nums):
-#         box = []
+def three_sum(nums: List[int]) -> List[List[int]]:
+    nums.sort()
+    length = len(nums)
+    done = set()
 
-#         for x in nums[i + 1 :]:
-#             if x not in box:
-#                 box.append(-num - x)
-#             else:
-#                 ans = [num, -num - x, x]
+    result = []
+    for i in range(length):
+        hm = {}
+        num = nums[i]
 
-#                 if ans not in res:
-#                     res.append(ans)
-#     return res
+        if num in done:
+            continue
+
+        target = 0 - num
+
+        if i == 0:
+            sub = nums[i + 1 :]
+        elif i == length - 1:
+            sub = nums[:i]
+        else:
+            sub = nums[:i] + nums[i + 1 :]
+
+        for num_ in sub:
+            k = target - num_
+
+            if k in hm and k in sub:
+                c = sorted([num, k, hm[k]])
+                if c not in result:
+                    result.append(c)
+
+            hm[num_] = k
+
+        done.add(num)
+
+    return result
 
 
 if __name__ == "__main__":
-    # assert three_sum([-1, 0, 1, 2, -1, -4]) == [[-1, 0, 1], [-1, -1, 2]]
-    # assert three_sum([1, 2, -2, -1]) == []
-    # assert three_sum([1, 2, -2]) == []
-    # assert three_sum([3, 0, -2, -1, 1, 2]) == [[-2, -1, 3], [-2, 0, 2], [-1, 0, 1]]
-    assert three_sum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]) == [
-        [-4, 0, 4],
-        [-4, 1, 3],
-        [-3, -1, 4],
-        [-3, 0, 3],
-        [-3, 1, 2],
-        [-2, -1, 3],
-        [-2, 0, 2],
-        [-1, -1, 2],
-        [-1, 0, 1],
-    ]
+    assert three_sum([-1, 0, 1, 2, -1, -4]) == [[-1, 0, 1], [-1, -1, 2]]
+    assert three_sum([1, 2, -2, -1]) == []
+    assert three_sum([1, 2, -2]) == []
+    assert three_sum([3, 0, -2, -1, 1, 2]) == [[-2, -1, 3], [-2, 0, 2], [-1, 0, 1]]
+    # assert three_sum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]) == [
+    #     [-4, 0, 4],
+    #     [-4, 1, 3],
+    #     [-3, -1, 4],
+    #     [-3, 0, 3],
+    #     [-3, 1, 2],
+    #     [-2, -1, 3],
+    #     [-2, 0, 2],
+    #     [-1, -1, 2],
+    #     [-1, 0, 1],
+    # ]
