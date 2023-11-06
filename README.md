@@ -39,6 +39,7 @@
 ### Priority Queue (Heap)
   - [0215 Kth Largest Element In An Array `Medium` `Max Heap` `LeetCode 75`](0215.kth.largest.element.in.an.array.py)
   - [0506 Relative Ranks `Easy` `HashMap` `Max Heap`](0506.relative.ranks.py)
+  - [2336 Smallest Number In Infinite Set `Medium` `LeetCode 75`](2336.smallest.number.in.infinite.set.py)
 
 ### Stack
   - [0003 Longest Substring Without Repeating Characters `Medium`](0003.longest.substring.without.repeating.characters.py)
