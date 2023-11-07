@@ -39,6 +39,7 @@
 ### Priority Queue (Heap)
   - [0215 Kth Largest Element In An Array `Medium` `Max Heap` `LeetCode 75`](0215.kth.largest.element.in.an.array.py)
   - [0506 Relative Ranks `Easy` `HashMap` `Max Heap`](0506.relative.ranks.py)
+  - [2462 Total Cost To Hire K Workers `Medium` `LeetCode 75` `Heapify`](2462.total.cost.to.hire.k.workers.py)
   - [2336 Smallest Number In Infinite Set `Medium` `LeetCode 75`](2336.smallest.number.in.infinite.set.py)
 
 ### Stack
@@ -54,14 +55,15 @@
   - [0507 Perfect Number `Easy` `Math` `Divisor`](0507.perfect.number.py)
 
 ### Linked List
-  - [0002 Add Two Numbers](0002.add.two.numbers.py)
-  - [0083 Remove Duplicates From Sorted List](0083.remove.duplicates.from.sorted.list.py)
-  - [0141 Linked List Cycle](0141.linked.list.cycle.py)
-  - [0169 Intersection Of Two Linked Lists](0160.intersection.of.two.linked.lists.py)
-  - [0203 Remove Linked List Elements](0203.remove.linked.list.elements.py)
-  - [0206 Reverse Linked List](0206.reverse.linked.list.py)
-  - [0234 Palindrome Linked List](0234.palindrome.linked.list.py)
-  - [2095 Delete The Middle Node Of A Linked List](2095.delete.the.middle.node.of.a.linked.list.py)
+  - [0002 Add Two Numbers `Medium`](0002.add.two.numbers.py)
+  - [0083 Remove Duplicates From Sorted List `Easy`](0083.remove.duplicates.from.sorted.list.py)
+  - [0141 Linked List Cycle `Easy`](0141.linked.list.cycle.py)
+  - [0169 Intersection Of Two Linked Lists `Easy`](0160.intersection.of.two.linked.lists.py)
+  - [0203 Remove Linked List Elements `Easy`](0203.remove.linked.list.elements.py)
+  - [0206 Reverse Linked List `Medium` `LeetCode 75`](0206.reverse.linked.list.py)
+  - [0234 Palindrome Linked List `Easy`](0234.palindrome.linked.list.py)
+  - [0328 Odd Even Linked List `Medium` `LeetCode 75`](0328.odd.even.linked.list.py)
+  - [2095 Delete The Middle Node Of A Linked List `Medium` `LeetCode75`](2095.delete.the.middle.node.of.a.linked.list.py)
   - [2130 Maximum Twin Sum Of A Linked List `Medium` `LeetCode 75` `Slow Fast`](2130.maximum.twin.sum.of.a.linked.list.py)
 
 ### Binary Tree
