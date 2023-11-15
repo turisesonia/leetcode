@@ -95,6 +95,7 @@
   - [0450 Delete Node In A Bst `Medium` `DFS` `BST`](0450.delete.node.in.a.bst.py)
     > 要了解 Inorder successor node，需複習
   - [0501 Find Mode In Binary Search Tree `Easy` `BST` `DFS`](0501.find.mode.in.binary.search.tree.py)
+  - [0530 Minimum Absolute Difference In Bst `Easy` `BST` `Inorder Traversal`](0530.minimum.absolute.difference.in.bst.py)
   - [0700 Search In A Binary Search Tree `Easy` `BST` `LeetCode 75`](0700.search.in.a.binary.search.tree.py)
   - [0872 Leaf Similar Trees](0872.leaf.similar.trees.py)
   - [1161 Maximum Level Sum Of A Binary Tree `Medium` `BFS` `LeetCode 75`](1161.maximum.level.sum.of.a.binary.tree.py)
