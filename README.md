@@ -129,10 +129,11 @@
   - [0216 Combination Sum Iii `Medium` `LeetCode 75`](0216.combination.sum.iii.py)
 
 ### Dynamic Programming 動態規劃
-  - [0014 Longest Common Prefix](0014.longest.common.prefix.py)
-  - [0053 Maxunum Subarry](0053.maxunum.subarry.py)
-  - [0070 Climbing Stairs](0070.climbing.stairs.py)
+  - [0014 Longest Common Prefix `Easy`](0014.longest.common.prefix.py)
+  - [0053 Maxunum Subarry `Medium`](0053.maxunum.subarry.py)
+  - [0070 Climbing Stairs `Easy`](0070.climbing.stairs.py)
   - [0303 Range Sum Query Immutable `Easy`](0303.range.sum.query.immutable.py)
+  - [1137 N-Th Tribonacci Number `Easy` `LeetCode 75`](1137.n-th.tribonacci.number.py)
 
 ### Greedy Algorithm 貪婪演算法
   找出當下所有選擇中的最佳解
