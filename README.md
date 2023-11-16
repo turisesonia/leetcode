@@ -133,6 +133,7 @@
   - [0053 Maxunum Subarry `Medium`](0053.maxunum.subarry.py)
   - [0070 Climbing Stairs `Easy`](0070.climbing.stairs.py)
   - [0303 Range Sum Query Immutable `Easy`](0303.range.sum.query.immutable.py)
+  - [0746 Min Cost Climbing Stairs `Easy` `LeetCode 75`](0746.min.cost.climbing.stairs.py)
   - [1137 N-Th Tribonacci Number `Easy` `LeetCode 75`](1137.n-th.tribonacci.number.py)
 
 ### Greedy Algorithm 貪婪演算法
@@ -147,3 +148,7 @@
 ### Uncategorized
   - [0520 Detect Capital `Easy` `String`](0520.detect.capital.py)
   - [0521 Longest Uncommon Subsequence `Easy` `String`](0521.longest.uncommon.subsequence.py)
+
+
+## Reference
+- [Dynamic Programming for Beginners](https://youtu.be/hekG82t4U_M?si=1SwN_saUeZgt_UvE)
