@@ -61,6 +61,29 @@ def gcd_of_strings(str1: str, str2: str) -> str:
     return ""
 
 
+def gcd_of_strings(str1: str, str2: str) -> str:
+    if len(str2) < len(str1):
+        str1, str2 = str2, str1
+
+    # 輾轉相除法找出兩個字傳長度的最大公因數
+    # greatest common divisor 的長度就會是此長度以下
+    x, y = len(str1), len(str2)
+    while x > 0:
+        x, y = y % x, x
+
+    while y > 0:
+        # 從較小的字串處取得 divisor
+        sub = str1[:y]
+
+        # if divisor (sub string) can mutiple y to equal str1 and str2, this is greatest common divisor
+        if sub * (len(str1) // y) == str1 and sub * (len(str2) // y) == str2:
+            return sub
+
+        y -= 1
+
+    return ""
+
+
 if __name__ == "__main__":
     assert gcd_of_strings("ABCABC", "ABC") == "ABC"
     assert gcd_of_strings("ABABAB", "AB") == "AB"

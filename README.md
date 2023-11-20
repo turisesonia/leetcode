@@ -54,6 +54,7 @@
 
 ### Math
   - [0507 Perfect Number `Easy` `Math` `Divisor`](0507.perfect.number.py)
+  - [1071 Greatest Common Divisor Of Strings `Easy` `Math` `Divisor` `LeetCode 75`](1071.greatest.common.divisor.of.strings.py)
 
 ### Linked List
   - [0002 Add Two Numbers `Medium`](0002.add.two.numbers.py)
