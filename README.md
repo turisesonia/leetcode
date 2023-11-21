@@ -114,6 +114,7 @@
     > 先找出相連的物件並將已訪問過的物件記錄起來，最後再將沒走訪過的元素再檢查一次
   - [0841 Keys And Rooms `Medium` `DFS` `LeetCode 75`](0841.keys.and.rooms.py)
   - [1791 Find Center Of Star Graph `Easy`](1791.find.center.of.star.graph.py)
+  - [1971 Find If Path Exists In Graph `Easy` `DFS`](1971.find.if.path.exists.in.graph.py)
 
 ### Two Pointers
   - [0005 Longest Palindrome `Medium`](0005.longest.palindrome.py)
