@@ -113,6 +113,7 @@
   - [0547 Number Of Provinces `Medium` `DFS` `LeetCode 75` `Need Review`](0547.number.of.provinces.py)
     > 先找出相連的物件並將已訪問過的物件記錄起來，最後再將沒走訪過的元素再檢查一次
   - [0841 Keys And Rooms `Medium` `DFS` `LeetCode 75`](0841.keys.and.rooms.py)
+  - [1791 Find Center Of Star Graph `Easy`](1791.find.center.of.star.graph.py)
 
 ### Two Pointers
   - [0005 Longest Palindrome `Medium`](0005.longest.palindrome.py)
