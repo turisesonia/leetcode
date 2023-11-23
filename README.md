@@ -113,6 +113,7 @@
   - [0547 Number Of Provinces `Medium` `DFS` `LeetCode 75` `Need Review`](0547.number.of.provinces.py)
     > 先找出相連的物件並將已訪問過的物件記錄起來，最後再將沒走訪過的元素再檢查一次
   - [0841 Keys And Rooms `Medium` `DFS` `LeetCode 75`](0841.keys.and.rooms.py)
+  - [0994 Rotting Oranges `Medium` `BFS` `LeetCode 75`](0994.rotting.oranges.py)
   - [1791 Find Center Of Star Graph `Easy`](1791.find.center.of.star.graph.py)
   - [1926 Nearest Exit From Entrance In Maze `Medium` `BFS` `LeetCode 75`](1926.nearest.exit.from.entrance.in.maze.py)
   - [1971 Find If Path Exists In Graph `Easy` `DFS`](1971.find.if.path.exists.in.graph.py)
