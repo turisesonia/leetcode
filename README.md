@@ -36,6 +36,7 @@
   - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
   - [0509 Fibonacci Number `Easy` `Fibonacci`](0509.fibonacci.number.py)
   - [0561 Array Partition `Easy`](0561.array.partition.py)
+  - [0605 Can Place Flowers `Easy` `LeetCode 75`](0605.can.place.flowers.py)
   - [1431 Kids With The Greatest Number Of Candies `Easy` `LeetCode 75`](1431.kids.with.the.greatest.number.of.candies.py)
 
 ### Priority Queue (Heap)

@@ -1,10 +1,10 @@
 """
 # 605
 Easy
+Can Place Flowers
 
 https://leetcode.com/problems/can-place-flowers
 
-Can Place Flowers
 You have a long flowerbed in which some of the plots are planted, and some are not.
 However, flowers cannot be planted in adjacent plots.
 
@@ -50,7 +50,7 @@ def can_place_flowers(flowerbed: List[int], n: int) -> bool:
             # 同 1 的判斷
             i += 3
 
-    return n <= 0
+    return n == 0
 
 
 if __name__ == "__main__":
