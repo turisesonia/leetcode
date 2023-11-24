@@ -50,7 +50,7 @@ def can_place_flowers(flowerbed: List[int], n: int) -> bool:
             # 同 1 的判斷
             i += 3
 
-    return n == 0
+    return n <= 0
 
 
 if __name__ == "__main__":
