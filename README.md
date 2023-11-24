@@ -2,8 +2,6 @@
 
 
 ## Unsolved
-  - [0334 Increasing Triplet Subsequence](0334.increasing.triplet.subsequence.py)
-
   - [2352 Equal Row And Column Pairs](2352.equal.row.and.column.pairs.py)
     處理 `[[13, 13], [13, 13]]` case 時,
     hash map 會因為 key 相同而覆蓋 value
@@ -33,6 +31,8 @@
 
 ### Array
   - [0056 Merge Intervals `Easy`](0056.merge.intervals.py)
+  - [0334 Increasing Triplet Subsequence `Medium` `Greedy` `LeetCode 75`](0334.increasing.triplet.subsequence.py)
+    > 利用初始化兩個無限大的數字來找出答案，需複習
   - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
   - [0509 Fibonacci Number `Easy` `Fibonacci`](0509.fibonacci.number.py)
   - [0561 Array Partition `Easy`](0561.array.partition.py)
