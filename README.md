@@ -122,6 +122,7 @@
 
 ### Two Pointers
   - [0005 Longest Palindrome `Medium`](0005.longest.palindrome.py)
+  - [0345 Reverse Vowels Of A String `Easy` `LeetCode 75`](0345.reverse.vowels.of.a.string.py)
 
 ### Binary Search
   - [0162 Find Peak Element `Medium` `LeetCode 75`](0162.find.peak.element.py)
