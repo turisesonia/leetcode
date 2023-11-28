@@ -144,6 +144,9 @@
 ### Dynamic Programming 動態規劃
   - [0014 Longest Common Prefix `Easy`](0014.longest.common.prefix.py)
   - [0053 Maxunum Subarry `Medium`](0053.maxunum.subarry.py)
+  - [0062 Unique Paths `Medium` `Math` `LeetCode 75`](0062.unique.paths.py)
+    > 可以用簡單的數學公式(C m 取 n)就計算出答案
+    > 但用 DP 畫出所有路徑數量較能理解
   - [0070 Climbing Stairs `Easy`](0070.climbing.stairs.py)
   - [0198 House Robber `Medium` `LeetCode 75`](0198.house.robber.py)
   - [0303 Range Sum Query Immutable `Easy`](0303.range.sum.query.immutable.py)
