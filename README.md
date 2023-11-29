@@ -152,6 +152,7 @@
   - [0303 Range Sum Query Immutable `Easy`](0303.range.sum.query.immutable.py)
   - [0746 Min Cost Climbing Stairs `Easy` `LeetCode 75`](0746.min.cost.climbing.stairs.py)
   - [1137 N-Th Tribonacci Number `Easy` `LeetCode 75`](1137.n-th.tribonacci.number.py)
+  - [1143 Longest Common Subsequence `Medium` `LeetCode 75`](1143.longest.common.subsequence.py)
 
 ### Greedy Algorithm 貪婪演算法
   找出當下所有選擇中的最佳解
