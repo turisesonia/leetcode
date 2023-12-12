@@ -39,95 +39,61 @@ Constraints:
 
 from typing import List
 
-# TODO Not solve
-
 
 def three_sum(nums: List[int]) -> List[List[int]]:
-    target = 0
+    # sort the nums list in ascending order
     nums.sort()
     length = len(nums)
-
-    finish = []
-    result = []
-
-    print(nums)
-
-    for idx in range(length):
-        # if nums[idx] in finish:
-        #     continue
-
-        # finish.append(nums[idx])
-
-        left = 1 if idx == 0 else 0
-        right = length - 1 if idx != length - 1 else length - 2
-
-        while left < right and idx not in [left, right]:
-            amount = nums[idx] + nums[left] + nums[right]
-
-            if amount == 0:
-                answer = sorted([nums[left], nums[idx], nums[right]])
-                if answer not in result:
-                    result.append(answer)
-
-            if amount < target:
-                left += 1
-            else:
-                right -= 1
-
-    print(result)
-    return result
-
-
-def three_sum(nums: List[int]) -> List[List[int]]:
-    nums.sort()
-    length = len(nums)
-    done = set()
+    visited = set()
 
     result = []
     for i in range(length):
-        hm = {}
         num = nums[i]
 
-        if num in done:
+        # Since the nums list is already sorted in ascending order,
+        # there are no pairs of numbers that can sum to zero if nums[i] is greater than zero.
+        if num in visited or num > 0:
             continue
 
-        target = 0 - num
+        visited.add(num)
 
-        if i == 0:
-            sub = nums[i + 1 :]
-        elif i == length - 1:
-            sub = nums[:i]
-        else:
-            sub = nums[:i] + nums[i + 1 :]
+        # fixed current position x
+        target = -1 * num
 
-        for num_ in sub:
-            k = target - num_
+        # two pointer to find y, z which y + z = -x
+        left, right = i + 1, length - 1
 
-            if k in hm and k in sub:
-                c = sorted([num, k, hm[k]])
-                if c not in result:
-                    result.append(c)
-
-            hm[num_] = k
-
-        done.add(num)
+        while left < right:
+            sum_ = nums[left] + nums[right]
+            if sum_ < target:
+                left += 1
+            elif sum_ > target:
+                right -= 1
+            else:
+                result.append([num, nums[left], nums[right]])
+                left += 1
+                # handle same number
+                while nums[left] == nums[left - 1] and left < right:
+                    left += 1
 
     return result
 
 
 if __name__ == "__main__":
-    assert three_sum([-1, 0, 1, 2, -1, -4]) == [[-1, 0, 1], [-1, -1, 2]]
+    assert three_sum([-2, 0, 1, 1, 2]) == [[-2, 0, 2], [-2, 1, 1]]
+    assert three_sum([-1, 0, 1, 2, -1, -4]) == [[-1, -1, 2], [-1, 0, 1]]
     assert three_sum([1, 2, -2, -1]) == []
     assert three_sum([1, 2, -2]) == []
     assert three_sum([3, 0, -2, -1, 1, 2]) == [[-2, -1, 3], [-2, 0, 2], [-1, 0, 1]]
-    # assert three_sum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]) == [
-    #     [-4, 0, 4],
-    #     [-4, 1, 3],
-    #     [-3, -1, 4],
-    #     [-3, 0, 3],
-    #     [-3, 1, 2],
-    #     [-2, -1, 3],
-    #     [-2, 0, 2],
-    #     [-1, -1, 2],
-    #     [-1, 0, 1],
-    # ]
+    assert three_sum([0, 0, 0]) == [[0, 0, 0]]
+    assert three_sum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]) == [
+        [-4, 0, 4],
+        [-4, 1, 3],
+        [-3, -1, 4],
+        [-3, 0, 3],
+        [-3, 1, 2],
+        [-2, -1, 3],
+        [-2, 0, 2],
+        [-1, -1, 2],
+        [-1, 0, 1],
+    ]

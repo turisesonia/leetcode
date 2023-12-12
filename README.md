@@ -1,16 +1,13 @@
 # Leedcode
 
+## Reference
+- [Dynamic Programming for Beginners](https://youtu.be/hekG82t4U_M?si=1SwN_saUeZgt_UvE)
 
-## Unsolved
+### Unsolved
   - [2352 Equal Row And Column Pairs](2352.equal.row.and.column.pairs.py)
-    處理 `[[13, 13], [13, 13]]` case 時,
-    hash map 會因為 key 相同而覆蓋 value
+    > 處理 `[[13, 13], [13, 13]]` case 時, hash map 會因為 key 相同而覆蓋 value
 
-## Uncomprehended
-  - [0007 Reverse Integer](0007.reverse.integer.py)
-
-## Data structure & Algorithms
-
+---
 
 ### String
   - [0008 String To Integer Atoi `Medium`](0008.string.to.integer.atoi.py)
@@ -128,6 +125,7 @@
 
 ### Two Pointers
   - [0005 Longest Palindrome `Medium`](0005.longest.palindrome.py)
+  - [0015 Three Sum `Medium` `Array`](0015.three.sum.py)
   - [0345 Reverse Vowels Of A String `Easy` `LeetCode 75`](0345.reverse.vowels.of.a.string.py)
 
 ### Binary Search
@@ -171,6 +169,5 @@
   - [0520 Detect Capital `Easy` `String`](0520.detect.capital.py)
   - [0521 Longest Uncommon Subsequence `Easy` `String`](0521.longest.uncommon.subsequence.py)
 
-
-## Reference
-- [Dynamic Programming for Beginners](https://youtu.be/hekG82t4U_M?si=1SwN_saUeZgt_UvE)
+### Uncomprehended
+  - [0007 Reverse Integer](0007.reverse.integer.py)
