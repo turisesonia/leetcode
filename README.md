@@ -14,7 +14,8 @@
 
 ### String
   - [0008 String To Integer Atoi `Medium`](0008.string.to.integer.atoi.py)
-  - [0541 Reverse String Ii](0541.reverse.string.ii.py)
+  - [0541 Reverse String II `Easy`](0541.reverse.string.ii.py)
+  - [0551 Student Attendance Record I `Easy`](0551.student.attendance.record.i.py)
 
 ### Hash Map
   - [0001 Two Sum `Easy`](0001.two.sum.py)
