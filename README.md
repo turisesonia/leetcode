@@ -126,6 +126,7 @@
 ### Two Pointers
   - [0005 Longest Palindrome `Medium`](0005.longest.palindrome.py)
   - [0015 Three Sum `Medium` `Array`](0015.three.sum.py)
+  - [0283 Move Zeros `Easy` `LeetCode 75`](0283.move.zeros.py)
   - [0345 Reverse Vowels Of A String `Easy` `LeetCode 75`](0345.reverse.vowels.of.a.string.py)
 
 ### Binary Search
