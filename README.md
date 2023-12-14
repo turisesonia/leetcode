@@ -156,6 +156,8 @@
   - [0070 Climbing Stairs `Easy`](0070.climbing.stairs.py)
   - [0198 House Robber `Medium` `LeetCode 75`](0198.house.robber.py)
   - [0303 Range Sum Query Immutable `Easy`](0303.range.sum.query.immutable.py)
+  - [0714 Best Time To Buy And Sell Stock With Transaction Fee `Medium` `LeetCode 75` `Greedy`](0714.best.time.to.buy.and.sell.stock.with.transaction.fee.py)
+    > 需複習, 要想到賣掉股票及賣掉前後持有的資產
   - [0746 Min Cost Climbing Stairs `Easy` `LeetCode 75`](0746.min.cost.climbing.stairs.py)
   - [1137 N-Th Tribonacci Number `Easy` `LeetCode 75`](1137.n-th.tribonacci.number.py)
   - [1143 Longest Common Subsequence `Medium` `LeetCode 75`](1143.longest.common.subsequence.py)
