@@ -140,6 +140,7 @@
   - [2300 Successful Pairs Of Spells And Potions `Medium` `LeetCode 75`](2300.successful.pairs.of.spells.and.potions.py)
 
 ### Sliding Window
+  - [0643 Maximum Average Subarray I `Easy` `LeetCode 75`](0643.maximum.average.subarray.i.py)
   - [1493 Logest Subarray Of 1's After Deleting One Element `Medium`](1493.logest.subarray.of.1's.after.deleting.one.element.py)
 
 ### Backtracking
