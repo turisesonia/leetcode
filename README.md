@@ -129,6 +129,7 @@
   - [0015 Three Sum `Medium` `Array`](0015.three.sum.py)
   - [0016 Three Sum Closest `Medium` `Array` `Math`](0016.three.sum.closest.py)
     > 最接近目標的值即為 abs(targt - data) 最趨近於 0 的數 (需複習)
+  - [0026 Remove Duplicates From Sorted Array `Easy` `Array` `Top Interview 150`](0026.remove.duplicates.from.sorted.array.py)
   - [0283 Move Zeros `Easy` `LeetCode 75`](0283.move.zeros.py)
   - [0345 Reverse Vowels Of A String `Easy` `LeetCode 75`](0345.reverse.vowels.of.a.string.py)
   - [0392 Is Subsequence `Easy` `LeetCode 75`](0392.is.subsequence.py)

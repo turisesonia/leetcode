@@ -1,18 +1,20 @@
 """
 # 26
-Remove Duplicates from Sorted Array
 Easy
+Remove Duplicates from Sorted Array
 
-Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
+The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
 
 Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
 
-Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.
+Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially.
+The remaining elements of nums are not important as well as the size of nums.
 Return k.
 Custom Judge:
 
 The judge will test your solution with the following code:
-
+```
 int[] nums = [...]; // Input array
 int[] expectedNums = [...]; // The expected answer with correct length
 
@@ -22,8 +24,8 @@ assert k == expectedNums.length;
 for (int i = 0; i < k; i++) {
     assert nums[i] == expectedNums[i];
 }
+````
 If all assertions pass, then your solution will be accepted.
-
 
 Example 1:
 Input: nums = [1,1,2]
@@ -37,11 +39,10 @@ Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 
-
 Constraints:
-1 <= nums.length <= 3 * 104
--100 <= nums[i] <= 100
-nums is sorted in non-decreasing order.
+* 1 <= nums.length <= 3 * 10^4
+* -100 <= nums[i] <= 100
+* nums is sorted in non-decreasing order.
 
 # ! 此題在 nums 傳入是用 reference 的方式, Leetcode 網站在驗證時會驗證此 list 的內容, 所以在解題時必須直接處理 nums 裡的元素.
 # ! 且題目要的答案只要 nums 內的 "唯一" 值不重複的排在最前面即可, 並不關心剩下的結果
@@ -77,6 +78,34 @@ def remove_duplicates(nums: List[int]) -> int:
         nums[idx] = n
 
     return len(uniq)
+
+
+# Two pointers
+def remove_duplicates(nums: List[int]) -> int:
+    length = len(nums)
+    if length <= 1:
+        return length
+
+    # store current duplicate number
+    dup = None
+
+    # two pointers, current and forward
+    c, f = 0, 0
+
+    # f 會一直在 nums 內向右檢查,
+    # 當發現不重複的數字時,
+    # 1. 更新 dup 為新的數字
+    # 2. 改動 c (current) 位置為不重複的數字
+    # 3. c 向右移動
+    while f < length:
+        if nums[f] != dup:
+            dup = nums[f]
+            nums[c] = nums[f]
+            c += 1
+
+        f += 1
+
+    return c
 
 
 if __name__ == "__main__":
