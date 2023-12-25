@@ -30,6 +30,7 @@
   - [2215 Find The Difference Of Two Arrays `Easy` `LeetCode 75`](2215.find.the.difference.of.two.arrays.py)
 
 ### Array
+  - [0055 Jump Game `Medium` `Dynamic Programming` `Top Interview 150`](0055.jump.game.py)
   - [0056 Merge Intervals `Easy`](0056.merge.intervals.py)
   - [0088 Merge Sorted Array `Easy` `Two Pointers` `Top Interview 150`](0088.merge.sorted.array.py)
   - [0189 Rotate Array `Medium` `Top Interview 150`](0189.rotate.array.py)
