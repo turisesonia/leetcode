@@ -183,6 +183,8 @@
   - [0435 Non Overlapping Intervals `Medium` `Dynamic Programming` `Greedy` `LeetCode 75`](0435.non.overlapping.intervals.py)
   - [0452 Minium Number Of Arrows To Burst Balloons `Medium` `Greedy` `LeetCode 75`](0452.minium.number.of.arrows.to.burst.balloons.py)
 
+### Matrix
+  - [0036 Vaild Sudoku `Medium` `Hash Map` `Top Interview 150`](0036.vaild.sudoku.py)
 
 ### Uncategorized
   - [0520 Detect Capital `Easy` `String`](0520.detect.capital.py)
