@@ -52,6 +52,7 @@
 
 ### Stack
   - [0003 Longest Substring Without Repeating Characters `Medium`](0003.longest.substring.without.repeating.characters.py)
+  - [0071 Simplify Path `Medium` `Top Interview 150`](0071.simplify.path.py)
   - [0394 Decode String `Medium` `LeetCode 75`](0394.decode.string.py)
   - [0496 Next Greater Element I `Easy`](0496.next.greater.element.i.py)
   - [0735 Asteroid Collision `Medium` `LeetCode 75`](0735.asteroid.collision.py)
