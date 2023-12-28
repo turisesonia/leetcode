@@ -53,6 +53,7 @@
 ### Stack
   - [0003 Longest Substring Without Repeating Characters `Medium`](0003.longest.substring.without.repeating.characters.py)
   - [0071 Simplify Path `Medium` `Top Interview 150`](0071.simplify.path.py)
+  - [0150 Evaluate Reverse Polish Notation `Medium` `Top Interview 150`](0150.evaluate.reverse.polish.notation.py)
   - [0155 Min Stack `Medium` `Top Interview 150`](0155.min.stack.py)
   - [0394 Decode String `Medium` `LeetCode 75`](0394.decode.string.py)
   - [0496 Next Greater Element I `Easy`](0496.next.greater.element.i.py)
