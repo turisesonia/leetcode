@@ -71,6 +71,8 @@
   - [0019 Remove Nth Node From End Of List `Medium`](0019.remove.nth.node.from.end.of.list.py)
   - [0083 Remove Duplicates From Sorted List `Easy`](0083.remove.duplicates.from.sorted.list.py)
   - [0141 Linked List Cycle `Easy`](0141.linked.list.cycle.py)
+  - [0146 LRU Cache `Medium` `Top Interview 150` `LRU Cache`](0146.lru.cache.py)
+    > 這題示範了簡單的 LRU cache 實作方式，可理解如何使用 linked list 以 O(1) 的方式實現 LRU Cache
   - [0169 Intersection Of Two Linked Lists `Easy` `Top Interview 150`](0160.intersection.of.two.linked.lists.py)
   - [0203 Remove Linked List Elements `Easy`](0203.remove.linked.list.elements.py)
   - [0206 Reverse Linked List `Medium` `LeetCode 75`](0206.reverse.linked.list.py)
