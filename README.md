@@ -70,6 +70,8 @@
   - [0002 Add Two Numbers `Medium`](0002.add.two.numbers.py)
   - [0019 Remove Nth Node From End Of List `Medium`](0019.remove.nth.node.from.end.of.list.py)
   - [0083 Remove Duplicates From Sorted List `Easy`](0083.remove.duplicates.from.sorted.list.py)
+  - [0092 Reverse Linked List II `Medium` `Top Interview 150`](0092.reverse.linked.list.ii.py)
+    > 宣告一個 Dummy head 來處理頭尾問題
   - [0138 Copy List With Random Pointer `Medium` `Hash Map` `Top Interview 150`](0138.copy.list.with.random.pointer.py)
   - [0141 Linked List Cycle `Easy`](0141.linked.list.cycle.py)
   - [0146 LRU Cache `Medium` `Top Interview 150` `LRU Cache`](0146.lru.cache.py)
