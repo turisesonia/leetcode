@@ -72,6 +72,7 @@
   - [0061 Rotate List `Medium` `Top Interview 150`](0061.rotate.list.py)
   - [0082 Remove Duplicates From Sorted List II `Medium` `Top Interview 150`](0082.remove.duplicates.from.sorted.list.ii.py)
   - [0083 Remove Duplicates From Sorted List `Easy`](0083.remove.duplicates.from.sorted.list.py)
+  - [0086 Partition List `Medium` `Top Interview 150`](0086.partition.list.py)
   - [0092 Reverse Linked List II `Medium` `Top Interview 150`](0092.reverse.linked.list.ii.py)
     > 宣告一個 Dummy head 來處理頭尾問題
   - [0138 Copy List With Random Pointer `Medium` `Hash Map` `Top Interview 150`](0138.copy.list.with.random.pointer.py)
