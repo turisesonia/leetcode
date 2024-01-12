@@ -176,6 +176,8 @@
     > 但用 DP 畫出所有路徑數量較能理解
   - [0070 Climbing Stairs `Easy`](0070.climbing.stairs.py)
   - [0121 Best Time To Buy And Sell Stock `Easy` `Array` `Top Interview 150`](0121.best.time.to.buy.and.sell.stock.py)
+  - [0122 Best Time To Buy And Sell Stock II `Medium` `Greedy` `Top Interview 150`](0122.best.time.to.buy.and.sell.stock.ii.py)
+    > 需複習, 與 0714 相同邏輯
   - [0198 House Robber `Medium` `LeetCode 75`](0198.house.robber.py)
   - [0303 Range Sum Query Immutable `Easy`](0303.range.sum.query.immutable.py)
   - [0714 Best Time To Buy And Sell Stock With Transaction Fee `Medium` `LeetCode 75` `Greedy`](0714.best.time.to.buy.and.sell.stock.with.transaction.fee.py)
