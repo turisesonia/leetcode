@@ -45,6 +45,19 @@ def max_profit(prices: List[int]) -> int:
     return max_
 
 
+def max_profit(prices: List[int]) -> int:
+    buy = prices[0]
+    profit = 0
+
+    for price in prices[1:]:
+        if price < buy:
+            buy = price
+        else:
+            profit = max(profit, (price - buy))
+
+    return profit
+
+
 if __name__ == "__main__":
     assert max_profit([7, 1, 5, 3, 6, 4]) == 5
     assert max_profit([7, 6, 4, 3, 1]) == 0
