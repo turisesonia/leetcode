@@ -154,6 +154,7 @@
 
 ### Binary Search
   - [0162 Find Peak Element `Medium` `LeetCode 75`](0162.find.peak.element.py)
+  - [0167 Two Sum II - Input Array Is Sorted `Medium` `Two Pointers` `Top Interview 150`](0167.two.sum.ii.input.array.is.sorted.py)
   - [0374 Guess Number Higher Or Lower `Easy` `LeetCode 75`](0374.guess.number.higher.or.lower.py)
   - [0441 Arranging Coins `Easy`](0441.arranging.coins.py)
   - [0875 Koko Eating Bananas `Medium` `LeetCode 75`](0875.koko.eating.bananas.py)
