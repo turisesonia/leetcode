@@ -50,8 +50,6 @@ def min_distance(word1: str, word2: str) -> int:
         pass
 
 
-
-
 if __name__ == "__main__":
     assert min_distance(word1="horse", word2="ros") == 3
     assert min_distance(word1="intention", word2="execution") == 5

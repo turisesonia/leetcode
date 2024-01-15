@@ -4,6 +4,7 @@
 - [Dynamic Programming for Beginners](https://youtu.be/hekG82t4U_M?si=1SwN_saUeZgt_UvE)
 
 ### Unsolved
+  - [0072 Edit Distance `Medium` `Top Interview 150`](0072.edit.distance.py)
   - [2352 Equal Row And Column Pairs](2352.equal.row.and.column.pairs.py)
     > 處理 `[[13, 13], [13, 13]]` case 時, hash map 會因為 key 相同而覆蓋 value
 
