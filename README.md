@@ -40,6 +40,8 @@
   - [0274 H Index `Medium` `Top Interview 150`](0274.h-index.py)
   - [0334 Increasing Triplet Subsequence `Medium` `Greedy` `LeetCode 75`](0334.increasing.triplet.subsequence.py)
     > 利用初始化兩個無限大的數字來找出答案，需複習
+  - [0380 Insert Delete Get Random O(1) `Medium` `Hash Map` `Top Interview 150`](0380.Insert Delete Get Random O1.py)
+    > 因為條件要在 O(1) 下完成, 在每次刪除元素前, 將要被刪除的元素和 array 中最後一個元素交換接著 pop 出來, 就不需要去動到其他元素的 index
   - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
   - [0509 Fibonacci Number `Easy` `Fibonacci`](0509.fibonacci.number.py)
   - [0561 Array Partition `Easy`](0561.array.partition.py)
