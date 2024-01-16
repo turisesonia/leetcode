@@ -37,6 +37,7 @@
   - [0056 Merge Intervals `Easy`](0056.merge.intervals.py)
   - [0088 Merge Sorted Array `Easy` `Two Pointers` `Top Interview 150`](0088.merge.sorted.array.py)
   - [0189 Rotate Array `Medium` `Top Interview 150`](0189.rotate.array.py)
+  - [0274 H Index `Medium` `Top Interview 150`](0274.h-index.py)
   - [0334 Increasing Triplet Subsequence `Medium` `Greedy` `LeetCode 75`](0334.increasing.triplet.subsequence.py)
     > 利用初始化兩個無限大的數字來找出答案，需複習
   - [0495 Teemo Attacking `Easy`](0495.teemo.attacking.py)
